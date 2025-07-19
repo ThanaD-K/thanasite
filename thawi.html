@@ -2,35 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thawi Series</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: white;
-      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #222;
       padding: 20px;
       text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 1px solid #444;
     }
-    a.button {
-      display: inline-block;
-      margin: 20px;
-      padding: 15px 30px;
-      background-color: #00bfff;
-      color: white;
+
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #aaa;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.2em;
     }
-    a.button:hover {
-      background-color: #0099cc;
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .game-card {
+      background-color: #1b1b1b;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .game-card h2 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .download-btn:hover {
+      background-color: #ffaa00;
     }
   </style>
 </head>
 <body>
-  <h1>🕹️ Thawi Series</h1>
-  <p>A bullet hell game built in Unity. Download coming soon.</p>
-  <a class="button" href="#">Download for Windows</a>
-  <br><br>
-  <a class="button" href="index.html">← Back to Home</a>
+  <header>Thawi Series</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="thawi.html">Thawi Series</a>
+    <a href="other.html">Other Games</a>
+  </nav>
+
+  <div class="container">
+    <div class="game-card">
+      <h2>Thawi – Seven Colored Moon</h2>
+      <p>The first chapter of the Thawi series. A fast-paced bullet hell game filled with magic, memories, and mayhem.</p>
+      <a href="seven-colored-moon.html" class="download-btn">View / Download</a>
+    </div>
+
+    <!-- You can add more games below in the same format -->
+
+  </div>
 </body>
 </html>
